@@ -489,6 +489,27 @@ p {
   margin: 0 auto 20px;
 }
 
+.message-wrapper {
+  flex-direction: column;
+  color: #637282;
+  text-align: center;
+}
+
+.message-wrapper .message-text {
+  font-size: 1rem;
+  color: #637282;
+  font-weight: 200;
+  text-align: center;
+}
+
+.spinner-wrapper, .message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
 /*project card syling*/
 @media (min-width: 240px) and (max-width: 770px){
   .project-card {
