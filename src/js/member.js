@@ -106,6 +106,20 @@ function submitForm(){
       Category: inputCategory,
     })
   }
+
+  if(($("#input-stack").val()) === 'machine-learning') {
+    db.collection('Machine Learning Members').doc(inputEmail).set({
+      Email: inputEmail,
+      Name: inputName,
+      Gender: inputGender,
+      Phone: inputPhone,
+      Faculty: inputFaculty,
+      Department: inputDepartment,
+      Level: inputLevel + ' Level',
+      Stack: inputStack,
+      Category: inputCategory,
+    })
+  }
   
   if(($("#input-stack").val()) === 'blockchain') {
     db.collection('Blockchain Members').doc(inputEmail).set({
