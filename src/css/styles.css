@@ -178,6 +178,11 @@ p {
   vertical-align: middle;
 }
 
+#loader {
+  margin-top: 10px;
+  display: none
+}
+
 #loading {
   position: fixed;
   left: 0;
@@ -2172,4 +2177,40 @@ hr{
 }
 .err-p{
   font-size: 60px;
+}
+
+.tab{
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+  background-color:#2F5BE7;
+}
+
+.step-button {
+  padding: 10px 12px;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+select.invalid {
+  background-color: #ffdddd;
+}
+input.form-control {
+  padding: 15px 20px;
+}
+select.form-control {
+  height: 50px;
+  padding: 5px 20px;
 }
