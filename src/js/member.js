@@ -231,33 +231,16 @@ function submitForm(){
     Category: inputCategory,
   })
   .then(function() {
+    $("#memberForm")[0].reset();
+    $('#memberModal').modal('hide');
+    var msgClasses = "h3 text-left tada animated text-success";
+    $("#memeberSubmit").removeClass().addClass(msgClasses).text('Welcome To DSC EKSU ' + inputName + '. Your are now a ' + inputStack + ' student.');
     alert('welcome to DSC EKSU ' + inputName + '. Your membership has been registered to learn ' + inputStack)
-    formSuccess();
   })
   .catch(function(error) {
-    formError();
-    submitMSG(false,error);
+    var msgClasses = "h3 text-left text-danger";
+    $("#memeberSubmit").removeClass().addClass(msgClasses).text(error);
   });
 
   $("#loader").hide();
-}
-
-function formSuccess(){
-  $("#memberForm")[0].reset();
-  submitMSG(true, "Your payment was sent successfully")
-}
-
-function formError(){
-  $("#memberForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $(this).removeClass();
-  });
-}
-
-function submitMSG(valid, msg){
-  if(valid){
-    var msgClasses = "h3 text-left tada animated text-success";
-  } else {
-    var msgClasses = "h3 text-left text-danger";
-  }
-  $("#memeberSubmit").removeClass().addClass(msgClasses).text(msg);
 }

@@ -1,29 +1,17 @@
-[debug] [2019-08-12T14:44:03.837Z] ----------------------------------------------------------------------
-[debug] [2019-08-12T14:44:03.840Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
-[debug] [2019-08-12T14:44:03.840Z] CLI Version:   7.2.2
-[debug] [2019-08-12T14:44:03.840Z] Platform:      linux
-[debug] [2019-08-12T14:44:03.840Z] Node Version:  v8.10.0
-[debug] [2019-08-12T14:44:03.840Z] Time:          Mon Aug 12 2019 15:44:03 GMT+0100 (WAT)
-[debug] [2019-08-12T14:44:03.840Z] ----------------------------------------------------------------------
+[debug] [2019-08-12T16:31:50.025Z] ----------------------------------------------------------------------
+[debug] [2019-08-12T16:31:50.028Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-08-12T16:31:50.028Z] CLI Version:   7.2.2
+[debug] [2019-08-12T16:31:50.028Z] Platform:      linux
+[debug] [2019-08-12T16:31:50.028Z] Node Version:  v8.10.0
+[debug] [2019-08-12T16:31:50.028Z] Time:          Mon Aug 12 2019 17:31:50 GMT+0100 (WAT)
+[debug] [2019-08-12T16:31:50.029Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-08-12T14:44:03.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-08-12T14:44:03.878Z] > authorizing via signed-in user
-[debug] [2019-08-12T14:44:03.878Z] [iam] checking project dsc-eksu for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2019-08-12T14:44:03.880Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dsc-eksu:testIamPermissions  
-
-[debug] [2019-08-12T14:44:06.090Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-12T14:44:06.095Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dsc-eksu  
- 
-[debug] [2019-08-12T14:44:07.234Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'dsc-eksu'...
-[info] 
-[info] i  deploying firestore, hosting
-[info] i  firestore: checking firestore.rules for compilation errors...
-[info] i  firestore: reading indexes from firestore.indexes.json...
-[debug] [2019-08-12T14:44:07.243Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/dsc-eksu:test  
-
-[debug] [2019-08-12T14:44:08.991Z] <<< HTTP RESPONSE 200
-[info] ✔  firestore: rules file firestore.rules compiled successfully
-[debug] [2019-08-12T14:44:08.997Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/dsc-eksu/versions  
+[debug] [2019-08-12T16:31:50.036Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-12T16:31:50.036Z] > authorizing via signed-in user
+[debug] [2019-08-12T16:31:50.037Z] [iam] checking project dsc-eksu for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-12T16:31:50.039Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-12T16:31:50.039Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-12T16:31:51.357Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-12T16:31:51.468Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dsc-eksu:testIamPermissions  
 

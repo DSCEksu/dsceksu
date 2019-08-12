@@ -101,9 +101,9 @@
           <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="https://medium.com/@dsceksu" target="_blank" rel="noopener">Stories</a></li>
         </ul>
-        <!-- <div class="custom-menu__right">
-          <a href="http://meetu.ps/c/3q6jR/zjdKV/f" class="event-btn" rel="noreferrer" target="_blank">Next Event</a>
-        </div> -->
+        <div class="custom-menu__right">
+          <a href="#memberModal" class="event-btn" data-toggle="modal"><i class="fa fa-users"></i> Become a member</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -855,11 +855,16 @@
               </div>  
             </div>
             <div class="tab">
+              <p>Confirmation</p>
+
+              <p class="text-center">Are you Sure Your Details Are correct?</p>
+            </div>
+            <div class="tab">
               <div id="memberSubmit" class="h3 text-center hidden"></div>
             </div>
+            <div class="tab"></div>
             
             <div style="text-align:center;margin-top:40px;">
-              <span class="step"></span>
               <span class="step"></span>
               <span class="step"></span>
               <span class="step"></span>
@@ -940,7 +945,7 @@
       } else {
         document.getElementById("prevBtn").style.display = "inline";
       }
-      if (n == (x.length - 2)) {
+      if (n == (x.length - 3)) {
         document.getElementById("nextBtn").innerHTML = "Submit";
         document.getElementById("nextBtn").setAttribute("type", "submit");
       } else if (n == (x.length - 1)) {
